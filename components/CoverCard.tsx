@@ -3,20 +3,20 @@ import Link from "next/link";
 
 interface DataType {
   title: string;
-  url?: string;
+  url: string;
   description?: string;
-  cover?: string;
+  cover: string;
 }
 
 export default function CoverCard({ data }: { data: DataType }) {
   return (
     <Link
-      href={data?.url || ""}
+      href={data.url || ""}
       className="overflow-hidden h-48 md:h-56 relative"
     >
       <div className="absolute z-10 h-full w-full bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAKUlEQVQImU3IMREAIAgAwJfNkQCEsH8cijjpMf6vnXlQaIiJFx+omEBfmqIEZLe2jzcAAAAASUVORK5CYII=')] object-cover" />
       <Image
-        src={`https://cdn.jsdelivr.net/gh/LycixRemix/Image-Logs@main/xm/19700101000000.jpg`}
+        src={data.cover}
         alt=""
         fill
         className="rounded-md"

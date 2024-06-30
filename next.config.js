@@ -6,9 +6,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.jsdelivr.net",
+        hostname: "hub.gitmirror.com",
         port: "",
-        pathname: "/gh/**",
+        pathname: "/**",
       },
     ],
   },
