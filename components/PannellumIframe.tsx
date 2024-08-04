@@ -13,7 +13,7 @@ export default function PannellumIframe({ src }: Props) {
       <iframe
         allowFullScreen
         style={{ borderStyle: "none" }}
-        src={`https://cdn.pannellum.org/2.5/pannellum.htm#panorama=${src}`}
+        src={`https://cdn.pannellum.org/2.5/pannellum.htm#panorama=${src}&autoLoad=true`}
       ></iframe>
     </div>
   );

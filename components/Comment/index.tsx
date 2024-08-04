@@ -11,7 +11,7 @@ export default function Comment({ term }: CommentProps) {
     <div className="mt-12">
       <Giscus
         id="comment"
-        repo="LycixRemix/comment"
+        repo="Chrismax-Merry/comment"
         repoId="R_kgDOLceyIw"
         category="Announcements"
         categoryId="DIC_kwDOLceyI84Cdw7Z"
