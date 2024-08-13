@@ -17,7 +17,7 @@ export const generateMetadata = async ({
     (doc) => doc.slug === decodeURIComponent(params.slug)
   );
   return {
-    title: `${doc?.title} | 林深时见鹿`,
+    title: `${doc?.title} | 杂谈`,
     description: doc?.description,
   };
 };
@@ -39,9 +39,9 @@ export default function PostLayout({ params }: { params: { slug: string } }) {
           </Link>
           &gt;<span className="ml-2">{doc.title}</span>
         </p>
-        <h2 className="mb-4 text-4xl font-bold">{doc.title}</h2>
+        <div className="mb-4 text-4xl font-bold">{doc.title}</div>
         <div className="meta mb-6 flex items-center justify-start">
-          {format(new Date(doc.date), "yyyy-MM-dd")}
+          {format(new Date(doc.date), "EEEE.dd.MM.yyyy")}
         </div>
         <hr className="my-6" />
         <MDX code={doc.body.code} />

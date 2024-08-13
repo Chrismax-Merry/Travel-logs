@@ -8,7 +8,7 @@ export default function Image(props: ImgHTMLAttributes<HTMLImageElement>) {
   return (
     <PhotoProvider>
       <PhotoView src={props.src}>
-        <img src={props.src} alt="" className="cursor-pointer" />
+        <img src={props.src} alt="" className="cursor-pointer" loading='lazy'/>
       </PhotoView>
     </PhotoProvider>
   )

@@ -1,0 +1,36 @@
+@layer components {
+
+    /* custome iframe */
+    .prose iframe {
+        @apply w-full h-full;
+    }
+
+    .prose h1,
+    h2,
+    h3,
+    h4 {
+        position: relative;
+    }
+
+    .prose h1::before,
+    h2::before,
+    h3::before,
+    h4::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        left: -32px;
+        background: #c82f57;
+    }
+
+    .prose a{
+        @apply text-blue-600;
+    }
+
+    .prose img{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
