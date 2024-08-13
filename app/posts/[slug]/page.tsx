@@ -1,7 +1,7 @@
 import { allDocs } from "contentlayer/generated";
 import { format } from "date-fns";
 import { notFound } from "next/navigation";
-import Comment from "@/components/Comment";
+// import Comment from "@/components/Comment";
 import MDX from "@/components/MDX";
 import Link from "next/link";
 
@@ -46,7 +46,7 @@ export default function PostLayout({ params }: { params: { slug: string } }) {
         <hr className="my-6" />
         <MDX code={doc.body.code} />
       </article>
-      <Comment term={doc.title} />
+      {/* <Comment term={doc.title} /> */}
     </div>
   );
 }
